@@ -1,0 +1,77 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 10, Errors: 0, Skipped: 3, Time elapsed: 205.577 s <<< FAILURE! - in TestSuite
+com.lambda.test.Tests.scenario2  Time elapsed: 2.172 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'mahendrakodi-lambdatest-w7ghfwxdpta', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.27-060127-generic', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bc740fd2910ec1f0093b68de4b1ba51, actions {actions=[org.openqa.selenium.interactions.Sequence@59546107]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}
+Session ID: 0bc740fd2910ec1f0093b68de4b1ba51
+	at com.lambda.test.Tests.scenario2(Tests.java:55)
+
+com.lambda.test.Tests.tearDown  Time elapsed: 2.193 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'mahendrakodi-lambdatest-w7ghfwxdpta', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.27-060127-generic', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bc740fd2910ec1f0093b68de4b1ba51, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}
+Session ID: 0bc740fd2910ec1f0093b68de4b1ba51
+	at com.lambda.test.Tests.tearDown(Tests.java:27)
+
+com.lambda.test.Tests.scenario2  Time elapsed: 8.992 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at com.lambda.test.Tests.scenario2(Tests.java:58)
+
+com.lambda.test.Tests.scenario1  Time elapsed: 2.017 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at com.lambda.test.Tests.scenario1(Tests.java:45)
+
+com.lambda.test.Tests.scenario3  Time elapsed: 9.258 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [Please fill out this field.]
+	at com.lambda.test.Tests.scenario3(Tests.java:90)
+
+com.lambda.test.Tests.scenario2  Time elapsed: 4.823 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at com.lambda.test.Tests.scenario2(Tests.java:58)
+
+com.lambda.test.Tests.scenario3  Time elapsed: 4.11 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [Please fill out this field.]
+	at com.lambda.test.Tests.scenario3(Tests.java:90)
+
+com.lambda.test.Tests.scenario2  Time elapsed: 8.455 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at com.lambda.test.Tests.scenario2(Tests.java:58)
+
+com.lambda.test.Tests.scenario1  Time elapsed: 2.671 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at com.lambda.test.Tests.scenario1(Tests.java:45)
+
+com.lambda.test.Tests.scenario3  Time elapsed: 8.358 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [This is a required field]
+	at com.lambda.test.Tests.scenario3(Tests.java:90)
+

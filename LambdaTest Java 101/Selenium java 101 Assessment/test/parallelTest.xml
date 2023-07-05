@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Assessment" parallel="methods" thread-count="2">
+    <test name="Test on Chrome">
+        <parameter name="Browser" value="Chrome"></parameter>
+        <parameter name="Version" value="88.0"></parameter>
+        <parameter name="Platform" value="Windows 10"></parameter>
+        <classes>
+            <class name="com.lambda.test.Tests">
+            </class> 
+        </classes>
+    </test> 
+
+    <test name="Test on Edge">
+        <parameter name="Browser" value="MicrosoftEdge"></parameter>
+        <parameter name="Version" value="87.0"></parameter>
+        <parameter name="Platform" value="macOS Sierra"></parameter>
+        <classes>
+            <class name="com.lambda.test.Tests">
+            </class> 
+        </classes>
+    </test> 
+    <test name="Test on FireFox">
+        <parameter name="Browser" value="Firefox"></parameter>
+        <parameter name="Version" value="82.0"></parameter>
+        <parameter name="Platform" value="Windows 7"></parameter>
+        <classes>
+            <class name="com.lambda.test.Tests">
+            </class> 
+        </classes>
+    </test> 
+    <test name="Test on Explorer">
+        <parameter name="Browser" value="Internet Explorer"></parameter>
+        <parameter name="Version" value="11.0"></parameter>
+        <parameter name="Platform" value="Windows 10"></parameter>
+        <classes>
+            <class name="com.lambda.test.Tests">
+            </class> 
+        </classes>
+    </test> 
+
+
+</suite>

@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="2" failed="9" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-01T13:40:50Z" name="Assessment" finished-at="2023-07-01T13:44:16Z" duration-ms="205290">
+    <groups>
+    </groups>
+    <test started-at="2023-07-01T13:40:50Z" name="Test on Chrome" finished-at="2023-07-01T13:41:16Z" duration-ms="26028">
+      <class name="com.lambda.test.Tests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@4b2bac3f]" started-at="2023-07-01T13:40:50Z" name="setup" finished-at="2023-07-01T13:41:14Z" duration-ms="23682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[88.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@4b2bac3f]" started-at="2023-07-01T13:40:50Z" name="setup" finished-at="2023-07-01T13:41:12Z" duration-ms="22032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[88.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="scenario2()[pri:0, instance:com.lambda.test.Tests@4b2bac3f]" started-at="2023-07-01T13:41:12Z" name="scenario2" finished-at="2023-07-01T13:41:16Z" duration-ms="3816" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'mahendrakodi-lambdatest-w7ghfwxdpta', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.27-060127-generic', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bc740fd2910ec1f0093b68de4b1ba51, actions {actions=[org.openqa.selenium.interactions.Sequence@59546107]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}
+Session ID: 0bc740fd2910ec1f0093b68de4b1ba51]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'mahendrakodi-lambdatest-w7ghfwxdpta', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.27-060127-generic', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bc740fd2910ec1f0093b68de4b1ba51, actions {actions=[org.openqa.selenium.interactions.Sequence@59546107]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}
+Session ID: 0bc740fd2910ec1f0093b68de4b1ba51
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:627)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:617)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:573)
+	at com.lambda.test.Tests.scenario2(Tests.java:55)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method signature="scenario1()[pri:0, instance:com.lambda.test.Tests@4b2bac3f]" started-at="2023-07-01T13:41:14Z" name="scenario1" finished-at="2023-07-01T13:41:16Z" duration-ms="2131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@4b2bac3f]" started-at="2023-07-01T13:41:16Z" name="tearDown" finished-at="2023-07-01T13:41:16Z" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@4b2bac3f]" started-at="2023-07-01T13:41:16Z" name="tearDown" finished-at="2023-07-01T13:41:16Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'mahendrakodi-lambdatest-w7ghfwxdpta', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.27-060127-generic', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bc740fd2910ec1f0093b68de4b1ba51, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}
+Session ID: 0bc740fd2910ec1f0093b68de4b1ba51]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'mahendrakodi-lambdatest-w7ghfwxdpta', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.27-060127-generic', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bc740fd2910ec1f0093b68de4b1ba51, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}
+Session ID: 0bc740fd2910ec1f0093b68de4b1ba51
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)
+	at com.lambda.test.BaseClass.shutDown(BaseClass.java:41)
+	at com.lambda.test.Tests.tearDown(Tests.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@4b2bac3f]" started-at="2023-07-01T13:41:16Z" name="tearDown" finished-at="2023-07-01T13:41:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="scenario3()[pri:0, instance:com.lambda.test.Tests@4b2bac3f]" started-at="2023-07-01T13:41:16Z" name="scenario3" finished-at="2023-07-01T13:41:16Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'mahendrakodi-lambdatest-w7ghfwxdpta', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.27-060127-generic', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bc740fd2910ec1f0093b68de4b1ba51, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}
+Session ID: 0bc740fd2910ec1f0093b68de4b1ba51]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'mahendrakodi-lambdatest-w7ghfwxdpta', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.27-060127-generic', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bc740fd2910ec1f0093b68de4b1ba51, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}
+Session ID: 0bc740fd2910ec1f0093b68de4b1ba51
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:455)
+	at com.lambda.test.BaseClass.shutDown(BaseClass.java:41)
+	at com.lambda.test.Tests.tearDown(Tests.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@4b2bac3f]" started-at="2023-07-01T13:41:16Z" name="setup" finished-at="2023-07-01T13:41:16Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- com.lambda.test.Tests -->
+    </test> <!-- Test on Chrome -->
+    <test started-at="2023-07-01T13:41:16Z" name="Test on Edge" finished-at="2023-07-01T13:42:31Z" duration-ms="74561">
+      <class name="com.lambda.test.Tests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@b2c9a9c]" started-at="2023-07-01T13:41:16Z" name="setup" finished-at="2023-07-01T13:42:02Z" duration-ms="45763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sierra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@b2c9a9c]" started-at="2023-07-01T13:41:16Z" name="setup" finished-at="2023-07-01T13:41:40Z" duration-ms="23672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sierra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="scenario2()[pri:0, instance:com.lambda.test.Tests@b2c9a9c]" started-at="2023-07-01T13:41:40Z" name="scenario2" finished-at="2023-07-01T13:41:49Z" duration-ms="8992" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Values are not same expected [95] but found [96]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lambda.test.Tests.scenario2(Tests.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@b2c9a9c]" started-at="2023-07-01T13:41:49Z" name="tearDown" finished-at="2023-07-01T13:41:49Z" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@b2c9a9c]" started-at="2023-07-01T13:41:49Z" name="setup" finished-at="2023-07-01T13:42:21Z" duration-ms="32122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sierra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="scenario1()[pri:0, instance:com.lambda.test.Tests@b2c9a9c]" started-at="2023-07-01T13:42:02Z" name="scenario1" finished-at="2023-07-01T13:42:04Z" duration-ms="2015" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Values are not same expected [95] but found [96]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lambda.test.Tests.scenario1(Tests.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@b2c9a9c]" started-at="2023-07-01T13:42:04Z" name="tearDown" finished-at="2023-07-01T13:42:04Z" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="scenario3()[pri:0, instance:com.lambda.test.Tests@b2c9a9c]" started-at="2023-07-01T13:42:21Z" name="scenario3" finished-at="2023-07-01T13:42:31Z" duration-ms="9256" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [Please fill out this field.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [Please fill out this field.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lambda.test.Tests.scenario3(Tests.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@b2c9a9c]" started-at="2023-07-01T13:42:31Z" name="tearDown" finished-at="2023-07-01T13:42:31Z" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lambda.test.Tests -->
+    </test> <!-- Test on Edge -->
+    <test started-at="2023-07-01T13:42:31Z" name="Test on FireFox" finished-at="2023-07-01T13:43:32Z" duration-ms="61213">
+      <class name="com.lambda.test.Tests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@d35dea7]" started-at="2023-07-01T13:42:31Z" name="setup" finished-at="2023-07-01T13:42:50Z" duration-ms="19550" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[82.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@d35dea7]" started-at="2023-07-01T13:42:31Z" name="setup" finished-at="2023-07-01T13:43:10Z" duration-ms="39251" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[82.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="scenario1()[pri:0, instance:com.lambda.test.Tests@d35dea7]" started-at="2023-07-01T13:42:50Z" name="scenario1" finished-at="2023-07-01T13:42:52Z" duration-ms="1483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@d35dea7]" started-at="2023-07-01T13:42:52Z" name="tearDown" finished-at="2023-07-01T13:42:52Z" duration-ms="602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@d35dea7]" started-at="2023-07-01T13:42:52Z" name="setup" finished-at="2023-07-01T13:43:27Z" duration-ms="34884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[82.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="scenario2()[pri:0, instance:com.lambda.test.Tests@d35dea7]" started-at="2023-07-01T13:43:10Z" name="scenario2" finished-at="2023-07-01T13:43:15Z" duration-ms="4822" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Values are not same expected [95] but found [96]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lambda.test.Tests.scenario2(Tests.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@d35dea7]" started-at="2023-07-01T13:43:15Z" name="tearDown" finished-at="2023-07-01T13:43:16Z" duration-ms="595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="scenario3()[pri:0, instance:com.lambda.test.Tests@d35dea7]" started-at="2023-07-01T13:43:27Z" name="scenario3" finished-at="2023-07-01T13:43:31Z" duration-ms="4109" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [Please fill out this field.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [Please fill out this field.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lambda.test.Tests.scenario3(Tests.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@d35dea7]" started-at="2023-07-01T13:43:31Z" name="tearDown" finished-at="2023-07-01T13:43:32Z" duration-ms="582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lambda.test.Tests -->
+    </test> <!-- Test on FireFox -->
+    <test started-at="2023-07-01T13:43:32Z" name="Test on Explorer" finished-at="2023-07-01T13:44:16Z" duration-ms="43441">
+      <class name="com.lambda.test.Tests">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@41a2befb]" started-at="2023-07-01T13:43:32Z" name="setup" finished-at="2023-07-01T13:43:51Z" duration-ms="19057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Internet Explorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@41a2befb]" started-at="2023-07-01T13:43:32Z" name="setup" finished-at="2023-07-01T13:43:40Z" duration-ms="7479" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Internet Explorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="scenario2()[pri:0, instance:com.lambda.test.Tests@41a2befb]" started-at="2023-07-01T13:43:40Z" name="scenario2" finished-at="2023-07-01T13:43:48Z" duration-ms="8455" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Values are not same expected [95] but found [96]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lambda.test.Tests.scenario2(Tests.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@41a2befb]" started-at="2023-07-01T13:43:48Z" name="tearDown" finished-at="2023-07-01T13:43:48Z" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.lambda.test.Tests@41a2befb]" started-at="2023-07-01T13:43:48Z" name="setup" finished-at="2023-07-01T13:44:07Z" duration-ms="18993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Internet Explorer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="scenario1()[pri:0, instance:com.lambda.test.Tests@41a2befb]" started-at="2023-07-01T13:43:51Z" name="scenario1" finished-at="2023-07-01T13:43:54Z" duration-ms="2670" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Values are not same expected [95] but found [96]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lambda.test.Tests.scenario1(Tests.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@41a2befb]" started-at="2023-07-01T13:43:54Z" name="tearDown" finished-at="2023-07-01T13:43:54Z" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="scenario3()[pri:0, instance:com.lambda.test.Tests@41a2befb]" started-at="2023-07-01T13:44:07Z" name="scenario3" finished-at="2023-07-01T13:44:15Z" duration-ms="8357" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [This is a required field]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [This is a required field]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at com.lambda.test.Tests.scenario3(Tests.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.lambda.test.Tests@41a2befb]" started-at="2023-07-01T13:44:15Z" name="tearDown" finished-at="2023-07-01T13:44:16Z" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lambda.test.Tests -->
+    </test> <!-- Test on Explorer -->
+  </suite> <!-- Assessment -->
+</testng-results>

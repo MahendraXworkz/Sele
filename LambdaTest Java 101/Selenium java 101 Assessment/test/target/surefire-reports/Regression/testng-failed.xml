@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Regression]" guice-stage="DEVELOPMENT" verbose="0">
+  <test parallel="methods" name="Lambda Test Assessment(failed)">
+    <classes>
+      <class name="com.lambda.test.Tests">
+        <methods>
+          <include name="scenario3"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lambda.test.Tests -->
+    </classes>
+  </test> <!-- Lambda Test Assessment(failed) -->
+</suite> <!-- Failed suite [Regression] -->

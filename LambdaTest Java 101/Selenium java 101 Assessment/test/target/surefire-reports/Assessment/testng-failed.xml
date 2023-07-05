@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Assessment]" guice-stage="DEVELOPMENT" verbose="0">
+  <test parallel="methods" name="Test on Chrome(failed)">
+    <parameter name="Platform" value="Windows 10"/>
+    <parameter name="Version" value="88.0"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.lambda.test.Tests">
+        <methods>
+          <include name="scenario3"/>
+          <include name="scenario2"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lambda.test.Tests -->
+    </classes>
+  </test> <!-- Test on Chrome(failed) -->
+  <test parallel="methods" name="Test on Edge(failed)">
+    <parameter name="Platform" value="macOS Sierra"/>
+    <parameter name="Version" value="87.0"/>
+    <parameter name="Browser" value="MicrosoftEdge"/>
+    <classes>
+      <class name="com.lambda.test.Tests">
+        <methods>
+          <include name="scenario3"/>
+          <include name="scenario2"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="scenario1"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lambda.test.Tests -->
+    </classes>
+  </test> <!-- Test on Edge(failed) -->
+  <test parallel="methods" name="Test on FireFox(failed)">
+    <parameter name="Platform" value="Windows 7"/>
+    <parameter name="Version" value="82.0"/>
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="com.lambda.test.Tests">
+        <methods>
+          <include name="scenario3"/>
+          <include name="scenario2"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lambda.test.Tests -->
+    </classes>
+  </test> <!-- Test on FireFox(failed) -->
+  <test parallel="methods" name="Test on Explorer(failed)">
+    <parameter name="Platform" value="Windows 10"/>
+    <parameter name="Version" value="11.0"/>
+    <parameter name="Browser" value="Internet Explorer"/>
+    <classes>
+      <class name="com.lambda.test.Tests">
+        <methods>
+          <include name="scenario3"/>
+          <include name="scenario2"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="scenario1"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.lambda.test.Tests -->
+    </classes>
+  </test> <!-- Test on Explorer(failed) -->
+</suite> <!-- Failed suite [Assessment] -->

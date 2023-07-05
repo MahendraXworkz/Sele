@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="205.577" tests="15" errors="0" skipped="3" failures="10">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/workspace/LambdaTest/Selenium java 101 Assessment/test/target/test-classes:/workspace/LambdaTest/Selenium java 101 Assessment/test/target/classes:/workspace/m2-repository/org/testng/testng/6.10/testng-6.10.jar:/workspace/m2-repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-java/4.0.0/selenium-java-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-api/4.0.0/selenium-api-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-chrome-driver/4.0.0/selenium-chrome-driver-4.0.0.jar:/workspace/m2-repository/com/google/auto/service/auto-service-annotations/1.0/auto-service-annotations-1.0.jar:/workspace/m2-repository/com/google/auto/service/auto-service/1.0/auto-service-1.0.jar:/workspace/m2-repository/com/google/auto/auto-common/1.0/auto-common-1.0.jar:/workspace/m2-repository/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.jar:/workspace/m2-repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/workspace/m2-repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/workspace/m2-repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/workspace/m2-repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/workspace/m2-repository/com/google/errorprone/error_prone_annotations/2.7.1/error_prone_annotations-2.7.1.jar:/workspace/m2-repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-chromium-driver/4.0.0/selenium-chromium-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-json/4.0.0/selenium-json-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v85/4.0.0/selenium-devtools-v85-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v93/4.0.0/selenium-devtools-v93-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v94/4.0.0/selenium-devtools-v94-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v95/4.0.0/selenium-devtools-v95-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-edge-driver/4.0.0/selenium-edge-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-firefox-driver/4.0.0/selenium-firefox-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-firefox-xpi-driver/4.0.0/selenium-firefox-xpi-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-ie-driver/4.0.0/selenium-ie-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-opera-driver/4.0.0/selenium-opera-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-remote-driver/4.0.0/selenium-remote-driver-4.0.0.jar:/workspace/m2-repository/io/netty/netty-buffer/4.1.68.Final/netty-buffer-4.1.68.Final.jar:/workspace/m2-repository/io/netty/netty-codec-http/4.1.67.Final/netty-codec-http-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-codec/4.1.67.Final/netty-codec-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-handler/4.1.67.Final/netty-handler-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-common/4.1.68.Final/netty-common-4.1.68.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-epoll/4.1.67.Final/netty-transport-native-epoll-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-kqueue/4.1.67.Final/netty-transport-native-kqueue-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-unix-common/4.1.67.Final/netty-transport-native-unix-common-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-transport/4.1.68.Final/netty-transport-4.1.68.Final.jar:/workspace/m2-repository/io/netty/netty-resolver/4.1.68.Final/netty-resolver-4.1.68.Final.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-api/1.6.0/opentelemetry-api-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-context/1.6.0/opentelemetry-context-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-exporter-logging/1.6.0/opentelemetry-exporter-logging-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-metrics/1.6.0-alpha/opentelemetry-sdk-metrics-1.6.0-alpha.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-common/1.6.0/opentelemetry-sdk-common-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.6.0/opentelemetry-sdk-extension-autoconfigure-spi-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.6.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.6.0-alpha.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-trace/1.6.0/opentelemetry-sdk-trace-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-api-metrics/1.6.0-alpha/opentelemetry-api-metrics-1.6.0-alpha.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk/1.6.0/opentelemetry-sdk-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-semconv/1.6.0-alpha/opentelemetry-semconv-1.6.0-alpha.jar:/workspace/m2-repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/workspace/m2-repository/net/bytebuddy/byte-buddy/1.11.19/byte-buddy-1.11.19.jar:/workspace/m2-repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/workspace/m2-repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/workspace/m2-repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/workspace/m2-repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/workspace/m2-repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/workspace/m2-repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/workspace/m2-repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/workspace/m2-repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/workspace/m2-repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-http/4.0.0/selenium-http-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-safari-driver/4.0.0/selenium-safari-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-support/4.0.0/selenium-support-4.0.0.jar:/workspace/m2-repository/io/github/bonigarcia/webdrivermanager/5.1.0/webdrivermanager-5.1.0.jar:/workspace/m2-repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/workspace/m2-repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/workspace/m2-repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/workspace/m2-repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/workspace/m2-repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/workspace/m2-repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/workspace/m2-repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/workspace/m2-repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/workspace/m2-repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/workspace/m2-repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/workspace/m2-repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/workspace/m2-repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/workspace/m2-repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/workspace/m2-repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/workspace/m2-repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/workspace/m2-repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/workspace/m2-repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/workspace/m2-repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value="GMT"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/home/gitpod/.sdkman/candidates/java/11.0.19.fx-zulu/lib"/>
+    <property name="sun.java.command" value="/workspace/LambdaTest/Selenium java 101 Assessment/test/target/surefire/surefirebooter8953065040500837962.jar /workspace/LambdaTest/Selenium java 101 Assessment/test/target/surefire 2023-07-01T13-40-49_932-jvmRun1 surefire7656251574420592761tmp surefire_017556828501305458127tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/workspace/LambdaTest/Selenium java 101 Assessment/test/target/test-classes:/workspace/LambdaTest/Selenium java 101 Assessment/test/target/classes:/workspace/m2-repository/org/testng/testng/6.10/testng-6.10.jar:/workspace/m2-repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-java/4.0.0/selenium-java-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-api/4.0.0/selenium-api-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-chrome-driver/4.0.0/selenium-chrome-driver-4.0.0.jar:/workspace/m2-repository/com/google/auto/service/auto-service-annotations/1.0/auto-service-annotations-1.0.jar:/workspace/m2-repository/com/google/auto/service/auto-service/1.0/auto-service-1.0.jar:/workspace/m2-repository/com/google/auto/auto-common/1.0/auto-common-1.0.jar:/workspace/m2-repository/com/google/guava/guava/31.0.1-jre/guava-31.0.1-jre.jar:/workspace/m2-repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/workspace/m2-repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/workspace/m2-repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/workspace/m2-repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/workspace/m2-repository/com/google/errorprone/error_prone_annotations/2.7.1/error_prone_annotations-2.7.1.jar:/workspace/m2-repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-chromium-driver/4.0.0/selenium-chromium-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-json/4.0.0/selenium-json-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v85/4.0.0/selenium-devtools-v85-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v93/4.0.0/selenium-devtools-v93-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v94/4.0.0/selenium-devtools-v94-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-devtools-v95/4.0.0/selenium-devtools-v95-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-edge-driver/4.0.0/selenium-edge-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-firefox-driver/4.0.0/selenium-firefox-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-firefox-xpi-driver/4.0.0/selenium-firefox-xpi-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-ie-driver/4.0.0/selenium-ie-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-opera-driver/4.0.0/selenium-opera-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-remote-driver/4.0.0/selenium-remote-driver-4.0.0.jar:/workspace/m2-repository/io/netty/netty-buffer/4.1.68.Final/netty-buffer-4.1.68.Final.jar:/workspace/m2-repository/io/netty/netty-codec-http/4.1.67.Final/netty-codec-http-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-codec/4.1.67.Final/netty-codec-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-handler/4.1.67.Final/netty-handler-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-common/4.1.68.Final/netty-common-4.1.68.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-epoll/4.1.67.Final/netty-transport-native-epoll-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-kqueue/4.1.67.Final/netty-transport-native-kqueue-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-unix-common/4.1.67.Final/netty-transport-native-unix-common-4.1.67.Final.jar:/workspace/m2-repository/io/netty/netty-transport/4.1.68.Final/netty-transport-4.1.68.Final.jar:/workspace/m2-repository/io/netty/netty-resolver/4.1.68.Final/netty-resolver-4.1.68.Final.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-api/1.6.0/opentelemetry-api-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-context/1.6.0/opentelemetry-context-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-exporter-logging/1.6.0/opentelemetry-exporter-logging-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-metrics/1.6.0-alpha/opentelemetry-sdk-metrics-1.6.0-alpha.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-common/1.6.0/opentelemetry-sdk-common-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.6.0/opentelemetry-sdk-extension-autoconfigure-spi-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.6.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.6.0-alpha.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk-trace/1.6.0/opentelemetry-sdk-trace-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-api-metrics/1.6.0-alpha/opentelemetry-api-metrics-1.6.0-alpha.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-sdk/1.6.0/opentelemetry-sdk-1.6.0.jar:/workspace/m2-repository/io/opentelemetry/opentelemetry-semconv/1.6.0-alpha/opentelemetry-semconv-1.6.0-alpha.jar:/workspace/m2-repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/workspace/m2-repository/net/bytebuddy/byte-buddy/1.11.19/byte-buddy-1.11.19.jar:/workspace/m2-repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/workspace/m2-repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/workspace/m2-repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/workspace/m2-repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/workspace/m2-repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/workspace/m2-repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/workspace/m2-repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/workspace/m2-repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/workspace/m2-repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/workspace/m2-repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-http/4.0.0/selenium-http-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-safari-driver/4.0.0/selenium-safari-driver-4.0.0.jar:/workspace/m2-repository/org/seleniumhq/selenium/selenium-support/4.0.0/selenium-support-4.0.0.jar:/workspace/m2-repository/io/github/bonigarcia/webdrivermanager/5.1.0/webdrivermanager-5.1.0.jar:/workspace/m2-repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/workspace/m2-repository/com/google/code/gson/gson/2.9.0/gson-2.9.0.jar:/workspace/m2-repository/com/github/docker-java/docker-java/3.2.13/docker-java-3.2.13.jar:/workspace/m2-repository/com/github/docker-java/docker-java-core/3.2.13/docker-java-core-3.2.13.jar:/workspace/m2-repository/com/github/docker-java/docker-java-api/3.2.13/docker-java-api-3.2.13.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/workspace/m2-repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/workspace/m2-repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/workspace/m2-repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/workspace/m2-repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/workspace/m2-repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/workspace/m2-repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/workspace/m2-repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.13/docker-java-transport-httpclient5-3.2.13.jar:/workspace/m2-repository/com/github/docker-java/docker-java-transport/3.2.13/docker-java-transport-3.2.13.jar:/workspace/m2-repository/org/apache/httpcomponents/client5/httpclient5/5.0.3/httpclient5-5.0.3.jar:/workspace/m2-repository/org/apache/httpcomponents/core5/httpcore5/5.0.2/httpcore5-5.0.2.jar:/workspace/m2-repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/workspace/m2-repository/net/java/dev/jna/jna/5.8.0/jna-5.8.0.jar:/workspace/m2-repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/workspace/m2-repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/gitpod"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="/home/gitpod/.sdkman/candidates/java/11.0.19.fx-zulu"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/workspace/LambdaTest/Selenium java 101 Assessment/test"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.vendor.version" value="Zulu11.64+19-CA"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/workspace/LambdaTest/Selenium java 101 Assessment/test/target/surefire/surefirebooter8953065040500837962.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.19+7-LTS"/>
+    <property name="user.name" value="gitpod"/>
+    <property name="path.separator" value=":"/>
+    <property name="otel.metrics.exporter" value="none"/>
+    <property name="os.version" value="6.1.27-060127-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="otel.traces.exporter" value="none"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="sun.nio.ch.bugLevel" value=""/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu11.64+19-CA"/>
+    <property name="localRepository" value="/workspace/m2-repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="11.0.19"/>
+    <property name="user.dir" value="/workspace/LambdaTest/Selenium java 101 Assessment/test"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="11.0.19+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="scenario1" classname="com.lambda.test.Tests" time="2.131">
+    <system-err><![CDATA[Jul 01, 2023 1:40:50 PM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Jul 01, 2023 1:41:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Jul 01, 2023 1:41:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="scenario1" classname="com.lambda.test.Tests" time="2.017">
+    <failure message="The following asserts failed:&#10;	Values are not same expected [95] but found [96]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at com.lambda.test.Tests.scenario1(Tests.java:45)
+]]></failure>
+    <system-err><![CDATA[Jul 01, 2023 1:42:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="scenario1" classname="com.lambda.test.Tests" time="1.483">
+    <system-err><![CDATA[Jul 01, 2023 1:42:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="scenario1" classname="com.lambda.test.Tests" time="2.671">
+    <failure message="The following asserts failed:&#10;	Values are not same expected [95] but found [96]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at com.lambda.test.Tests.scenario1(Tests.java:45)
+]]></failure>
+    <system-err><![CDATA[Jul 01, 2023 1:43:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="scenario2" classname="com.lambda.test.Tests" time="2.172">
+    <failure message="Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.&#10;Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;&#10;System info: host: &apos;mahendrakodi-lambdatest-w7ghfwxdpta&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.27-060127-generic&apos;, java.version: &apos;11.0.19&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [0bc740fd2910ec1f0093b68de4b1ba51, actions {actions=[org.openqa.selenium.interactions.Sequence@59546107]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}&#10;Session ID: 0bc740fd2910ec1f0093b68de4b1ba51" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'mahendrakodi-lambdatest-w7ghfwxdpta', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.27-060127-generic', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bc740fd2910ec1f0093b68de4b1ba51, actions {actions=[org.openqa.selenium.interactions.Sequence@59546107]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}
+Session ID: 0bc740fd2910ec1f0093b68de4b1ba51
+	at com.lambda.test.Tests.scenario2(Tests.java:55)
+]]></failure>
+  </testcase>
+  <testcase name="scenario2" classname="com.lambda.test.Tests" time="8.992">
+    <failure message="The following asserts failed:&#10;	Values are not same expected [95] but found [96]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at com.lambda.test.Tests.scenario2(Tests.java:58)
+]]></failure>
+    <system-err><![CDATA[Jul 01, 2023 1:41:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="scenario2" classname="com.lambda.test.Tests" time="4.823">
+    <failure message="The following asserts failed:&#10;	Values are not same expected [95] but found [96]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at com.lambda.test.Tests.scenario2(Tests.java:58)
+]]></failure>
+    <system-err><![CDATA[Jul 01, 2023 1:43:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="scenario2" classname="com.lambda.test.Tests" time="8.455">
+    <failure message="The following asserts failed:&#10;	Values are not same expected [95] but found [96]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96]
+	at com.lambda.test.Tests.scenario2(Tests.java:58)
+]]></failure>
+    <system-err><![CDATA[Jul 01, 2023 1:43:38 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="tearDown" classname="com.lambda.test.Tests" time="2.193">
+    <failure message="Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.&#10;Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;&#10;System info: host: &apos;mahendrakodi-lambdatest-w7ghfwxdpta&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.27-060127-generic&apos;, java.version: &apos;11.0.19&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [0bc740fd2910ec1f0093b68de4b1ba51, quit {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}&#10;Session ID: 0bc740fd2910ec1f0093b68de4b1ba51" type="org.openqa.selenium.WebDriverException"><![CDATA[org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'mahendrakodi-lambdatest-w7ghfwxdpta', ip: '127.0.0.1', os.name: 'Linux', os.arch: 'amd64', os.version: '6.1.27-060127-generic', java.version: '11.0.19'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bc740fd2910ec1f0093b68de4b1ba51, quit {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}
+Session ID: 0bc740fd2910ec1f0093b68de4b1ba51
+	at com.lambda.test.Tests.tearDown(Tests.java:27)
+]]></failure>
+  </testcase>
+  <testcase name="tearDown" classname="com.lambda.test.Tests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setup" classname="com.lambda.test.Tests" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="scenario3" classname="com.lambda.test.Tests" time="0">
+    <skipped message="Unable to find the session info for particular sessionId 0bc740fd2910ec1f0093b68de4b1ba51, maybe session has quit already or timed out.&#10;Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;&#10;System info: host: &apos;mahendrakodi-lambdatest-w7ghfwxdpta&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1.27-060127-generic&apos;, java.version: &apos;11.0.19&apos;&#10;Driver info: org.openqa.selenium.remote.RemoteWebDriver&#10;Command: [0bc740fd2910ec1f0093b68de4b1ba51, quit {}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\ltuser\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:53643}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 0bc740fd2910ec1f0093b68de4b...}&#10;Session ID: 0bc740fd2910ec1f0093b68de4b1ba51"/>
+  </testcase>
+  <testcase name="scenario3" classname="com.lambda.test.Tests" time="9.258">
+    <failure message="The following asserts failed:&#10;	Values are not same expected [95] but found [96],&#10;	expected [Please fill in the fields] but found [Please fill out this field.]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [Please fill out this field.]
+	at com.lambda.test.Tests.scenario3(Tests.java:90)
+]]></failure>
+    <system-err><![CDATA[Jul 01, 2023 1:42:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="scenario3" classname="com.lambda.test.Tests" time="4.11">
+    <failure message="The following asserts failed:&#10;	Values are not same expected [95] but found [96],&#10;	expected [Please fill in the fields] but found [Please fill out this field.]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [Please fill out this field.]
+	at com.lambda.test.Tests.scenario3(Tests.java:90)
+]]></failure>
+    <system-err><![CDATA[Jul 01, 2023 1:43:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="scenario3" classname="com.lambda.test.Tests" time="8.358">
+    <failure message="The following asserts failed:&#10;	Values are not same expected [95] but found [96],&#10;	expected [Please fill in the fields] but found [This is a required field]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	Values are not same expected [95] but found [96],
+	expected [Please fill in the fields] but found [This is a required field]
+	at com.lambda.test.Tests.scenario3(Tests.java:90)
+]]></failure>
+    <system-err><![CDATA[Jul 01, 2023 1:44:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>
